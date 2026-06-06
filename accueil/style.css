@@ -1,0 +1,200 @@
+/* ============================================
+   RESET — Supprime les marges par défaut
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* La taille inclut le padding */
+}
+
+/* ============================================
+   BASE — Style général de la page
+   ============================================ */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* ============================================
+   NAVBAR — Barre de navigation en haut
+   ============================================ */
+.navbar {
+    display: flex;                  /* Met les éléments en ligne */
+    justify-content: space-between; /* Logo à gauche, liens à droite */
+    align-items: center;            /* Centre verticalement */
+    padding: 15px 40px;
+    background-color: #1a1a2e;      /* Fond bleu foncé */
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: #e94560; /* Mot "Bac" en rouge */
+}
+
+.nav-links {
+    list-style: none; /* Supprime les puces */
+    display: flex;
+    gap: 25px;        /* Espace entre les liens */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+.nav-links a:hover {
+    color: #e94560; /* Rouge au survol */
+}
+
+/* ============================================
+   HERO — Section principale (gauche + droite)
+   ============================================ */
+.hero {
+    display: flex;          /* Côte à côte */
+    gap: 40px;
+    padding: 60px 40px;
+    align-items: center;
+}
+
+/* Texte côté gauche */
+.hero-text {
+    flex: 1; /* Prend la moitié de l'espace */
+}
+
+.hero-text h1 {
+    font-size: 32px;
+    color: #1a1a2e;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6; /* Hauteur de ligne pour la lisibilité */
+}
+
+/* Boîte identifiant */
+.identifiant-box {
+    background-color: #fff;
+    border-left: 4px solid #e94560; /* Barre rouge à gauche */
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+}
+
+.identifiant-box h3 {
+    margin-bottom: 8px;
+    color: #1a1a2e;
+}
+
+.id-example {
+    display: block;       /* Sur sa propre ligne */
+    font-weight: bold;
+    color: #e94560;
+    margin-top: 8px;
+}
+
+/* Boutons */
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn.primary {
+    background-color: #e94560;
+    color: white;
+}
+
+.btn.secondary {
+    background-color: white;
+    color: #1a1a2e;
+    border: 2px solid #1a1a2e;
+}
+
+.btn:hover {
+    opacity: 0.85; /* Légèrement transparent au survol */
+}
+
+/* Carte côté droit */
+.hero-card {
+    flex: 1;
+    background-color: #1a1a2e;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.hero-card h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.card-item {
+    background-color: rgba(255,255,255,0.08); /* Blanc transparent */
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* ============================================
+   STEPS — Section "Comment ça marche ?"
+   ============================================ */
+.steps {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: white;
+}
+
+.steps h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #1a1a2e;
+}
+
+.steps-container {
+    display: flex;    /* Les 4 étapes côte à côte */
+    gap: 20px;
+    justify-content: center;
+}
+
+.step {
+    background-color: #f5f5f5;
+    padding: 25px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.step h3 {
+    font-size: 36px;
+    color: #e94560;  /* Numéro en rouge */
+    margin-bottom: 10px;
+}
+
+.step h4 {
+    margin-bottom: 8px;
+    color: #1a1a2e;
+}
+
+/* ============================================
+   FOOTER — Bas de page
+   ============================================ */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a2e;
+    color: #aaa;
+    font-size: 14px;
+}

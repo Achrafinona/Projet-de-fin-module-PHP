@@ -1,0 +1,122 @@
+/* ============================================
+   NAVBAR — Barre de navigation en haut
+   ============================================ */
+.navbar {
+    display: flex;                  /* Met les éléments en ligne */
+    justify-content: space-between; /* Logo à gauche, liens à droite */
+    align-items: center;            /* Centre verticalement */
+    padding: 15px 40px;
+    background-color: #1a1a2e;      /* Fond bleu foncé */
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: #e94560; /* Mot "Bac" en rouge */
+}
+
+.nav-links {
+    list-style: none; /* Supprime les puces */
+    display: flex;
+    gap: 25px;        /* Espace entre les liens */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+.nav-links a:hover {
+    color: #e94560; /* Rouge au survol */
+}
+
+/* ============================================
+   FORMS & INPUTS — Unified App Styles
+   ============================================ */
+
+/* Center forms nicely on the background */
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Base headers for form pages */
+h1, h3 {
+    text-align: center;
+    color: #1a1a2e;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+/* Explicit labels */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+    font-size: 14px;
+}
+
+/* Inputs, drop-downs, and file fields styling */
+form input[type="text"],
+form input[type="password"],
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: border-color 0.2s ease;
+}
+
+form input[type="file"] {
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+/* Focus colors aligned with your primary theme accent */
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form select:focus {
+    border-color: #e94560;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Stylizing individual wrapper blocks within the registration form */
+#info\ perso, 
+#info\ bac, 
+#databaseInfo, 
+#info\ event {
+    background-color: #fdfdfd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #1a1a2e;
+}
+
+/* Aligning inputs inside the blocks */
+#info\ perso h3, 
+#databaseInfo h3, 
+#info\ event h3 {
+    text-align: left;
+    margin-top: 0;
+    font-size: 18px;
+    color: #e94560;
+}
+
+/* Fix reset button styling alignment */
+form input[type="reset"] {
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+}

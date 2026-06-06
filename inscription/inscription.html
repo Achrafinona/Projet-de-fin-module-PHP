@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="logo">Inscription<span>->Evenements</span></div>
+        <ul class="nav-links">
+            <li><a href="../accueil/index.html">Accueil</a></li>
+            <li><a href="../inscription/inscription.html">Inscription</a></li>
+            <li><a href="../login/login.html">Connexion</a></li>
+        </ul>
+    </nav>
+    </header>
+    <h1>Inscription aux concours 2026</h1>
+
+    <form action="inscrire_participant.php" enctype="multipart/form-data" method="POST">
+        <div id="info perso">
+            <h3>Informations personnelles</h3>
+            <label for="nom">Nom complet* :</label>
+            <input type="text" id="nom" name="user_name"><br><br>
+            
+            <label for="email">Email* :</label>
+            <input type="text" id="email" name="user_email"><br><br>
+
+            <label for="tel">Téléphone :</label>
+            <input type="text" id="tel" name="user_tel"><br><br>
+        </div>
+
+        <div id="info bac">
+            <label for='pdfBac'>Carte d'identité format PDF* :</label>
+            <input id='pdfBac' type='file' name='bacNumerique'>
+            <br><br>
+
+            <label for='bacYear'>Année de naissance* : </label>
+            <select id='bacYear' name='Year'>
+                <option value='2025'>2000</option>
+                <option value='2026'>2015</option>
+            </select>
+            <br><br>
+        </div>
+        
+        <div id="databaseInfo">
+            <h3>Informations de connexion</h3>
+            <label for="userName">Login* :</label>
+            <input type="text" name="user_login"><br><br>
+
+            <label for="passwd">Mot de passe* : </label>
+            <input type="password" name="user_pass"><br><br>
+        </div>
+            
+        <div id="info event">
+            <h3>Informations supplémentaires</h3>
+            
+            <label for="Motivation">Motivation : </label>
+            <input type="text" name="Motivation"><br><br>
+
+            <label for="comment">Comment tu nous connais : </label>
+            <select name="source_connaissance">
+                <option>Réseaux sociaux</option>
+                <option>Amis</option>
+                <option>Famille</option>
+                <option>Site web</option>
+            </select>
+        </div>
+
+        <br>
+        <button type="submit" class="btn primary">Envoyer</button>
+        <input type="reset" name="reset" class="btn secondary">
+    </form>
+</body>
+</html>

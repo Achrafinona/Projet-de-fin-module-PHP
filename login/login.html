@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Inscription<span>->Evenements</span></div>
+            <ul class="nav-links">
+                <li><a href="../accueil/index.html">Accueil</a></li>
+                <li><a href="../inscription/inscription.html">Inscription</a></li>
+                <li><a href="../login/login.html">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h3>Connexion Étudiant</h3>
+    <form action="connecter_etudiant.php" method="POST">
+        <label for="login">Login :</label>
+        <input type="text" id="login" name="login"> 
+        <br><br>
+    
+        <label for="passwd">Mot de passe :</label>
+        <input type="password" id="passwd" name="password">
+
+        <br><br>
+        <button type="submit" class="btn primary">Se connecter</button>
+    </form>
+        
+</body> 
+</html>
